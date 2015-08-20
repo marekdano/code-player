@@ -58,6 +58,44 @@
       padding: 5px 10px;
     }
 
+    .clear {
+      clear: both;
+    }
+
+    .codeContainer {
+      height: 100%;
+      width: 50%;
+      float: left;
+      position: relative;
+    }
+
+    .codeContainer textarea {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-right: 1px solid grey;
+      font-family: monotype;
+      font-size: 90%;
+      padding: 5px;
+    }
+
+    .codeLabel {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    #cssContainer, #jsContainer {
+      display: none;
+    }
+
+    iframe {
+      height: 100%;
+      position: relative;
+      left: 20px;
+      border: none;
+    }
+
   </style>
 
 </head>
@@ -76,6 +114,36 @@
         <li style="border: none">Result</li>
       </ul>
     </div>
+    <div class="clear"></div>
+    <div class="codeContainer" id="htmlContainer">
+      <div class="codeLabel">HTML</div>
+      <textarea>Example code</textarea>
+    </div>
+    <div class="codeContainer" id="cssContainer">
+      <div class="codeLabel">CSS</div>
+      <textarea>Example code</textarea>
+    </div>
+    <div class="codeContainer" id="jsContainer">
+      <div class="codeLabel">JavaScript</div>
+      <textarea>Example code</textarea>
+    </div>
+    <div class="codeContainer" id="resultContainer">
+      <div class="codeLabel">Result</div>
+      <iframe></iframe>
+    </div>
+    
+
   </div> 
+
+  <script type="text/javascript">
+    
+    var windowHeight = $(window).height();
+    var menuBarHeight = $('#menuBar').height();
+    var codeContainerHeight = windowHeight - menuBarHeight;
+
+    $('.codeContainer').height(codeContainerHeight+'px');
+
+  </script>
+
 </body>
 </html>
