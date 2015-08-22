@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#menuBar {
+  width: 100%;
+  height: 50px;
+  background-color: #E0e0e0;
+  border-bottom: 1px solid grey;
+}
+
+#logo {
+  padding: 5px 0 0 20px;
+  font-weight: bold;
+  font-size: 120%;
+  float: left; 
+  color: #39CCCC;
+  text-shadow: .5px 1px 1px black
+}
+
+#logo p {
+  font-size: 60%;
+  color: black;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-shadow: none;
+  font-style: italic;
+}
+
+#buttonDiv {
+  float: right;
+  padding: 10px 10px 0 0;
+}
+
+#runButton { 
+  font-size: 120%;
+  background-color: #39CCCC;
+  border-radius: 5px;
+}
+
+#menu {
+  width: 220px;
+  margin: 0 auto;
+  list-style: none;
+  height: 28px;
+  padding: 0px;
+  position: relative;
+  top: 10px;
+}
+
+#menu li {
+  float: left;
+  border-right: 1px solid #39CCCC;
+  border-top: 1px solid #39CCCC;
+  border-bottom: 1px solid #39CCCC;
+  padding: 5px 10px;
+}
+
+#menu li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; 
+  border-left: 1px solid #39CCCC;
+}
+
+#menu li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 1px solid #39CCCC;
+}
+
+.clear {
+  clear: both;
+}
+
+.codeContainer {
+  height: 100%;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+.codeContainer textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-right: 1px solid grey;
+  font-family: monotype;
+  font-size: 90%;
+  padding: 30px 5px 5px;
+  box-sizing: border-box;
+  cursor: auto;
+}
+
+.codeLabel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#CSSContainer, #JSContainer {
+  display: none;
+}
+
+iframe {
+  height: 100%;
+  position: relative;
+  left: 20px;
+  border: none;
+  padding: 25px 5px 5px;
+}
+
+#JSContainer textarea {
+  font-size: 1.2em;
+}
+
+.selected {
+  background-color: #39CCCC;
+}
